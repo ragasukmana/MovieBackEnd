@@ -14,9 +14,9 @@ module.exports = {
     createMovies: async(req, res)=>{
         try {
             const setData = {
-                movie : req.body.movieName,
+                movie : req.body.movie,
                 genre : req.body.genre,
-                productionHouseId : req.body.productionHouse
+                productionHouseId : req.body.productionHouseId
             }
             const result = await postMovies(setData)
             const message = 'Data berhasil ditambah'
