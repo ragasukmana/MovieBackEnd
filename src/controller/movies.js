@@ -9,7 +9,7 @@ const helper = require('../helper')
 module.exports = {
     getMovies: async(req, res) => {
         const result = await getMovies()
-        return helper.response(res, 200, result)
+        return helper.response(res, 200,null, result)
     },
     createMovies: async(req, res)=>{
         try {
