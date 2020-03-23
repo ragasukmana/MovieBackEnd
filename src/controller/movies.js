@@ -30,9 +30,9 @@ module.exports = {
     editMovies: async(req, res)=>{
         try {
             const setData = {
-                movie : req.body.movieName,
+                movie : req.body.movie,
                 genre : req.body.genre,
-                productionHouseId : req.body.productionHouse
+                productionHouseId : req.body.productionHouseId
             }
             const id = req.params.id
             const result = await putMovies(setData, id)
